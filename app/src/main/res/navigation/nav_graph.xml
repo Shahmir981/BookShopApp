@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/bookListFragment">
+
+    <fragment
+        android:id="@+id/bookListFragment"
+        android:name="com.example.bookshopapp.presentation.ui.screens.bookListScreen.BookListFragment"
+        android:label="@string/booklist">
+        <action
+            android:id="@+id/action_bookListFragment_to_preview"
+            app:destination="@id/bookPreviewFragment">
+
+            <argument
+                android:name="book"
+                app:argType="com.example.bookshopapp.domain.model.BookModel" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookPreviewFragment"
+        android:name="com.example.bookshopapp.presentation.ui.screens.bookPreviewScreen.BookPreviewFragment"
+        android:label="@string/preview" >
+
+<!--        <deepLink app:uri="booksapp://book/preview/{id}" />-->
+
+        <argument
+            android:name="book"
+            app:argType="com.example.bookshopapp.domain.model.BookModel" />
+    </fragment>
+</navigation>

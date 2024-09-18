@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BookShopApp</string>
+    <string name="an_error_occurred">An error occurred</string>
+    <string name="retry">Retry</string>
+    <string name="author_name">Author Name</string>
+    <string name="book_title">Book Title</string>
+    <string name="preview">Preview</string>
+    <string name="booklist">BookList</string>
+</resources>
